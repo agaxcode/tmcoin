@@ -26,7 +26,7 @@ namespace CryptoNote
     //TODO Specify total number of available coins
     //TODO ((uint64_t)(-1)) equals to 18446744073709551616 coins
     //TODO or you can define number explicitly UINT64_C(858986905600000000)
-    const uint64_t MONEY_SUPPLY = UINT64_C(858986905600000000);
+    const uint64_t MONEY_SUPPLY = UINT64_C(858986905600000027);
     const unsigned EMISSION_SPEED_FACTOR = 18;
     static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
@@ -75,7 +75,7 @@ namespace CryptoNote
   } // namespace parameters
 
   //TODO Put here the name of your currency
-  const char CRYPTONOTE_NAME[] = "TMcoin";
+  const char CRYPTONOTE_NAME[] = "TMCoin";
   const char GENESIS_COINBASE_TX_HEX[] = "";
 
   const uint8_t CURRENT_TRANSACTION_VERSION = 1;
