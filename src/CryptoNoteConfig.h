@@ -76,7 +76,7 @@ namespace CryptoNote
 
   //TODO Put here the name of your currency
   const char CRYPTONOTE_NAME[] = "TMCoin";
-  const char GENESIS_COINBASE_TX_HEX[] = "013c01ff0001c08f8af8ae5f029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121013912f90";
+  const char GENESIS_COINBASE_TX_HEX[] = "";
 
   const uint8_t CURRENT_TRANSACTION_VERSION = 1;
   const uint8_t BLOCK_MAJOR_VERSION_1 = 1;
@@ -108,8 +108,8 @@ namespace CryptoNote
 
   //TODO Add here your network seed nodes
   const std::initializer_list<const char *> SEED_NODES = {
-      "52.91.17.58:17236",
-      "34.238.116.123:17236"};
+      "18.234.186.171:17236",
+      "18.212.11.180:17236"};
 
   struct CheckpointData
   {
