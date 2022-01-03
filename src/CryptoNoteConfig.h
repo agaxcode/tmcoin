@@ -26,7 +26,7 @@ namespace CryptoNote
     //TODO Specify total number of available coins
     //TODO ((uint64_t)(-1)) equals to 18446744073709551616 coins
     //TODO or you can define number explicitly UINT64_C(858986905600000000)
-    const uint64_t MONEY_SUPPLY = ;
+    const uint64_t MONEY_SUPPLY = UINT64_C(858986905600000027);
     const unsigned EMISSION_SPEED_FACTOR = 18;
     static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
@@ -37,7 +37,7 @@ namespace CryptoNote
     //TODO Define number of digits
     const size_t CRYPTONOTE_DISPLAY_DECIMAL_POINT = 8;
     //TODO Define minimum fee for transactions
-    const uint64_t MINIMUM_FEE = ;
+    const uint64_t MINIMUM_FEE = 100000;
     const uint64_t DEFAULT_DUST_THRESHOLD = MINIMUM_FEE;
 
     //TODO Define preferred block's target time
@@ -75,8 +75,8 @@ namespace CryptoNote
   } // namespace parameters
 
   //TODO Put here the name of your currency
-  const char CRYPTONOTE_NAME[] = "";
-  const char GENESIS_COINBASE_TX_HEX[] = "";
+  const char CRYPTONOTE_NAME[] = "TMCoin";
+  const char GENESIS_COINBASE_TX_HEX[] = "013c01ff0001c08f8af8ae5f029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121016af63e03d7c9a48af682b70820b437190034ba4727a2e6807e2b0414666dd340";
 
   const uint8_t CURRENT_TRANSACTION_VERSION = 1;
   const uint8_t BLOCK_MAJOR_VERSION_1 = 1;
@@ -87,9 +87,9 @@ namespace CryptoNote
   const size_t COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT = 1000;
 
   //TODO This port will be used by the daemon to establish connections with p2p network
-  const int P2P_DEFAULT_PORT = ;
+  const int P2P_DEFAULT_PORT = 17236;
   //TODO This port will be used by the daemon to interact with simlewallet
-  const int RPC_DEFAULT_PORT = ;
+  const int RPC_DEFAULT_PORT = 18236;
 
   const size_t P2P_LOCAL_WHITE_PEERLIST_LIMIT = 1000;
   const size_t P2P_LOCAL_GRAY_PEERLIST_LIMIT = 5000;
@@ -108,9 +108,8 @@ namespace CryptoNote
 
   //TODO Add here your network seed nodes
   const std::initializer_list<const char *> SEED_NODES = {
-      //"your_seed_ip1:8080",
-      //"your_seed_ip2:8080",
-      };
+      "18.234.186.171:17236",
+      "18.212.11.180:17236"};
 
   struct CheckpointData
   {
